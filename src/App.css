@@ -1,38 +1,193 @@
-.App {
-  text-align: center;
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 2rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #ffffff;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.comment-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fff;
+  font-size: 14px;
+  margin-top: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.comment-table th, .comment-table td {
+  padding: 12px 16px;
+  border: 1px solid #ddd;
+  text-align: left;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.comment-table th {
+  background-color: #f5f5f5;
+  cursor: pointer;
+  user-select: none;
+  white-space: nowrap;
+}
+
+.comment-table tr:nth-child(even) {
+  background-color: #fafafa;
+}
+
+.comment-table tr:hover {
+  background-color: #f1f1f1;
+}
+
+.search-input {
+  padding: 8px 12px;
+  width: 100%;
+  max-width: 400px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-top: 1rem;
+}
+
+.pagination {
+  margin-top: 16px;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 14px;
+}
+
+.pagination button {
+  padding: 6px 12px;
+  background-color: #1976d2;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.pagination button:disabled {
+  background-color: #aaa;
+  cursor: not-allowed;
+}
+
+.pagination select {
+  padding: 6px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+.form-title {
+  margin-bottom: 1rem;
+}
+
+.form-box {
+  background-color: #fff;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
   display: flex;
   flex-direction: column;
+  gap: 1.2rem;
+}
+
+.form-field label {
+  font-weight: 600;
+  margin-bottom: 6px;
+  display: block;
+  color: #333;
+  font-size: 15px;
+}
+
+.form-value {
+  background-color: #f2f2f2;
+  padding: 12px 14px;
+  border-radius: 8px;
+  font-size: 14px;
+  color: #444;
+}
+.form-title {
+  margin-bottom: 1rem;
+}
+
+.form-box {
+  background-color: #fff;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.form-field label {
+  font-weight: 600;
+  margin-bottom: 6px;
+  display: block;
+  color: #333;
+  font-size: 15px;
+}
+
+.form-value {
+  background-color: #f2f2f2;
+  padding: 12px 14px;
+  border-radius: 8px;
+  font-size: 14px;
+  color: #444;
+}
+.form-header-flex {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.avatar-circle {
+  width: 50px;
+  height: 50px;
+  background-color: #1976d2;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  border-radius: 50%;
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  text-transform: uppercase;
+}
+
+.form-name {
+  font-size: 22px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.form-email {
+  margin: 2px 0 0;
+  font-size: 14px;
+  color: #555;
+}
+.sort-arrow {
+  font-size:16px;
+  display:block;
+  margin-top:4px;
+  color: #555;
+}
+.sort-controls {
+  display: flex;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.sort-controls button {
+  background-color: #1976d2;
   color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+  font-weight: 500;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.sort-controls button:hover {
+  background-color: #155ea1;
 }
